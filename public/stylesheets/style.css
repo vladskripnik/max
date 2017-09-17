@@ -1,0 +1,486 @@
+body {
+  padding: 10px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding-top: 0;
+}
+
+a {
+  color: #00B7FF;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 10px;
+}
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.registration{
+  padding-left: 450px;
+}
+.registration-q{
+  padding-left: 450px;
+}
+.styleq{
+  margin-top: 60px;
+  margin-left: 450px;
+}
+select.input-lg{
+  padding: 5px 10px;
+  font-size: 16px;
+}
+.forgotten{
+  color: #000;
+  padding-left: 50px;
+}
+.todo-form{
+  border: 1px solid black;
+  width: 400px;
+}
+.dqt{
+  margin-top: 5px;
+  border-top: 2px solid #a7aaaf;
+}
+.arrow{
+  font-size:50px;
+  color: #fff;
+}
+.input-lg {
+  border-radius: 0;
+  height: 60px;
+}
+.button-press{
+  margin-top: 50px;
+  margin-left: 450px;
+  margin-bottom: 20px;
+}
+.user-panel{
+  margin-left: 60px;
+  margin-right: 60px;
+  background-color: #fff;
+}
+.arrow-right{
+  border: 40px solid transparent;
+  border-left-color: steelblue;
+  border-right: 0;
+  padding-left:50px;
+}
+.button-regist{
+  padding-top: 20px;
+}
+.form-group{
+  margin-bottom: 0;
+}
+.add-user{
+  color: #fff;
+}
+.add-user:hover{
+  color: #fff;
+  text-decoration: none;
+}
+.user-panel{
+  height: 100%;
+}
+.usernamefor{
+ padding-top: 10px;
+}
+.login{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.imgposition{
+  padding-top: 50px;
+  padding-left: 450px;
+  padding-bottom: 100px;
+}
+.custom-select {
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 0 0em;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 40px;
+  z-index: 1;
+}
+.form-control-name{
+  float: left;
+  width: 100%;
+}
+.custom-select:hover {
+  border-color: #999;
+}
+.form-group-name{
+  width: 50%;
+}
+
+.custom-select:before {
+  color: #333;
+  display: block;
+  font-family: 'FontAwesome';
+  font-size: 1em;
+  height: 100%;
+  line-height: 5em;
+  padding: 0 0.625em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  width: 3em;
+  z-index: -1;
+}
+
+.custom-select select {
+  background-color: transparent;
+  border: 0 none;
+  box-shadow: none;
+  color: #333;
+  display: block;
+  font-size: 100%;
+  line-height: normal;
+  margin: 0;
+  padding: .5em;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.custom-select select::-ms-expand {
+  display: none; /* to ie 10 */
+}
+
+.custom-select select:focus {
+  outline: none;
+}
+:-moz-any(.custom-select):before {
+  background-color: #fff; /* this is necessary for overcome the caret default browser */
+  pointer-events: none; /* https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events  */
+  z-index: 1; /* this is necessary for overcome the pseudo element */
+}
+.container {
+  max-width: 400px;
+  background-color: #eeeeee;
+  border: 1px solid ;
+  padding: 0px;
+}
+.button-add{
+  margin-top: 25px;
+}
+.button-regist{
+  padding-left: 135px;
+}
+.roles-panel{
+  padding-top: 30px;
+  font-size: 18px;
+}
+.roles-panel-q{
+  padding-top: 30px;
+  font-size: 21px;
+  padding-left: 95px;
+  font-weight: bold
+}
+.button-push{
+  border: 0;
+  height: 60px;
+  width:  120px;
+  background-color: #000;
+
+}
+.image-preview-input {
+    position: relative;
+  overflow: hidden;
+  margin: 0px;    
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;    
+}
+.image-preview-input input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.image-preview-input-title {
+    margin-left:2px;
+}
+.preview-foto{
+  width: 275px;
+}
+.domain{
+  color:#949596;
+  height: 50px;
+  width: 300px;
+  padding-top: 10px;
+  float: left;
+}
+.users-panel-form{
+  padding-left: 30px;
+}
+.header {
+  margin: 0px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
+.selection{
+  width: 300px;
+  height: 30px;
+  border-radius: 0;
+  margin-bottom: 20px;
+}
+.loginpanel{
+  text-align: left;
+  background-color: #000;
+  color: #fff;
+  width: 400px;
+  padding-left: 30px;
+}
+.loginpanel-q{
+  text-align: left;
+  background-color: #fff
+  color: #000;
+  width: 400px;
+  padding-left: 30px;
+}
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+ul.menu > li {
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+ul.menu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: white;
+    text-decoration: none;
+    z-index: 1;
+}
+ul.submenu {
+    z-index: 1;
+    float: left;
+    display: none;
+    position: absolute;
+    width: 120px;
+    top: 25px;
+    right: 45px;
+    background-color: white;
+    border: 1px solid #cfcfd1;
+}
+ul.submenu > li {
+    display: block;
+    z-index: 1;
+}
+ul.submenu > li > a {
+    display: block;
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #000;
+    background-color: white;
+    text-decoration: none;
+    z-index: 1;
+}
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+ul.menu {
+  float: left;
+}
+.flag {
+  background-color: red;
+  width: 100px;
+  height: 150px;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 70%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 70%, 0 100%);
+}
+.loginaddress{
+  padding-top: 25px;
+  color: #000;
+  text-decoration: none;
+}
+.loginaddress:hover{
+  text-decoration: none;
+}
+.updateform-user{
+  padding-left: 95px;
+  padding-top: 0px;
+  border-left: 1px solid #d4d6d8;
+}
+.pd {
+  padding-bottom: 10px;
+}
+.form-group-center{
+}
+.ps {
+  width: 120px;
+  float: left;
+  margin-bottom: 10px;
+}
+.psq {
+  width: 120px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+.nameq{
+  width: 240px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  border-radius: 0;
+
+}
+.qw{
+   width: 245px;
+   border-radius: 0;
+   margin-bottom: 10px;
+}
+.update-buttom{
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 17px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+  .imgposition{
+    padding-left: 300px;
+  }
+  .registration{
+    padding-left: 300px;
+  }
+  .registration-q{
+    padding-left: 300px;
+  }
+  .button-press{
+    margin-left: 300px;
+    margin-bottom: 20px;
+  }
+  .styleq{
+    margin-left: 300px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .imgposition{
+    padding-left: 150px;
+  }
+  .registration{
+    padding-left: 150px;
+  }
+  .registration-q{
+    padding-left: 170px;
+  }
+  .button-press{
+    margin-left: 150px;
+  }
+  .styleq{
+    margin-left: 150px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .imgposition{
+    padding-left: 40px;
+  }
+  .logo-image{
+    width: 300px;
+    height: 150px;
+  }
+  .registration{
+    padding-left: 80px;
+    padding-right: 60px;
+  }
+  .registration-q{
+    padding-left: 80px;
+    padding-right: 60px;
+  }
+  .button-press{
+    margin-left: 80px;
+    margin-bottom: 20px;
+    margin-right: 60px;
+  }
+  .styleq{
+    margin-left: 130px;
+  }
+  .styleq > h2{
+    font-size: 20px;
+  }
+  .loginpanel{
+    width: 300px;
+  }
+  .todo-form{
+    width: 300px;
+  }
+  .button-regist{
+    padding-left: 80px;
+  }
+  .forgotten {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  .imgposition{
+    padding-left: 30px;
+  }
+  .logo-image{
+    width: 300px;
+    height: 150px;
+  }
+  .registration{
+    padding-left: 60px;
+    padding-right: 40px;
+  }
+  .registration-q{
+    padding-left: 70px;
+    padding-right: 40px;
+  }
+  .button-press{
+    margin-left: 60px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+  }
+  .styleq{
+    margin-left: 110px;
+  }
+  .styleq > h2{
+    font-size: 20px;
+  }
+  .loginpanel{
+    width: 300px;
+  }
+  .todo-form{
+    width: 300px;
+  }
+  .button-regist{
+    padding-left: 80px;
+  }
+  .forgotten {
+    padding-left: 0;
+  }
+}

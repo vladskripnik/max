@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html ng-app="nodeTodo">
+<head>
+  <title>User Update</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link rel="stylesheet" href="stylesheets/style.css" media="screen">
+</head>
+<body ng-controller="UpdateController" style="background-color: #88898c;">
+<form class="user-panel">
+<div class="users-panel-form">
+  <div class="row">
+    <div class="col-md-4">
+        <div class="loginpanel-q">
+          <h2 class="lg">Users &raquo; {{username}}</h2>
+        </div>
+    </div>
+    <div class="col-md-2">
+      <div class="roles-panel"> All roles </div>
+    </div>
+    <div class="col-md-4">
+      <div class="roles-panel">All domains</div>
+    </div>
+  </div>
+</div>
+<hr class="dqt">
+<div class="users-panel-form">
+  <div class="row header-panel">
+    <div class="col-md-2">
+        <div class="loginpanel-q">
+          <h3 class="lg"> Name &dArr;</h3>
+        </div>
+    </div>
+    <div class="col-md-2">
+      <div class="roles-panel">  Roles &dArr;</div>
+    </div>
+    <div class="col-md-2">
+      <div class="roles-panel"> Domains &dArr;</div>
+    </div>
+    <div class="col-md-4">
+      <div class="roles-panel-q"> Update {{username}}</div>
+    </div>
+  </div>
+</div>
+<div class="users-panel-form">
+  <div class="row">
+    <div class="col-md-2">
+        <div class="loginpanel-q">
+          <div class="users-list">
+          <ul ng-repeat="todo in todoData">
+            <li><h4><form class="lead"  ><img src="/man-1.svg" style="width: 50px;height: 50px;">  {{ todo.name }}</form></h4></li>
+          </ul>
+    </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+      <div class="users-list">
+          <ul ng-repeat="todo in todoData">
+            <li><h4><form class="domain"  >&#10050; {{ todo.role }}</form></h4></li>
+          </ul>
+    </div>
+    </div>
+    <div class="col-md-2">
+      <div class="users-list">
+        <ul ng-repeat="todo in todoData">
+          <li><h4><form class="domain"  >&#10050; {{ todo.domain }}</form></h4></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <form class="updateform-user">
+          <div class="pd">
+            <div>
+              <h5 style="padding-bottom: 20px;padding-top: 5px; font-weight: bold;"> All fields marked bold must be completed. </h5>
+            </div>
+              <select class="custom-select fa-caret-down input-lg psq" ng-model="info.domain">
+                <option value="">&raquo; Domain</option>
+                <option value="Bluehost">&raquo; Bluehost</option>
+                <option value="Ipage">&raquo; Ipage</option>
+                <option value="Hostgator">&raquo; HostGator</option>
+                <option value="Gogaddy">&raquo; GoDaddy</option>
+                <option value="Webcom">&raquo; WebCom</option>
+              </select>
+              <select class="custom-select fa-caret-down input-lg ps" ng-model="info.role">
+                <option value="">&raquo; Role</option>
+                <option value="user">&raquo; User</option>
+                <option value="manager">&raquo; Manager</option>
+                <option value="admin">&raquo; Admin</option>
+              </select>
+            </div>
+            <div class="form-group-center">
+                <input type="text" class="form-control input-md nameq" required placeholder="&raquo; Enter name" ng-model="nameData.text">
+                <input type="text" class="form-control input-md nameq" placeholder="&raquo; Enter surname" ng-model="surnameData.text" required>
+                <input type="text" class="form-control input-md qw" placeholder="&raquo; Enter  email" ng-model="emailData.text" required>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control input-md qw" placeholder="&raquo; Enter username" ng-model="loginData.text" required>
+              <div class="form-group">
+                <input type="text" class="form-control input-md qw" placeholder="&raquo; Enter password" ng-model="passData.text" required>
+              </div>
+            </div>
+            <div class="add-photo">
+                <div class="row">    
+                    <div class="col-md-9 preview-foto">  
+                        <!-- image-preview-filename input [CUT FROM HERE]-->
+                        <div class="input-group image-preview">
+                            <input type="text" class="form-control image-preview-filename" disabled="disabled" value="$link"> <!-- don't give a name === doesn't send on POST/GET -->
+                            <span class="input-group-btn">
+                                <!-- image-preview-clear button -->
+                                <button type="button" class="btn btn-default image-preview-clear" style="display:none;">
+                                    <span class="glyphicon glyphicon-remove"></span> Clear
+                                </button>
+                                <!-- image-preview-input -->
+                                <div class="btn btn-default image-preview-input">
+                                    <span class="glyphicon glyphicon-folder-open"></span>
+                                    <span class="image-preview-input-title">Browse</span>
+                                    <input type="file" accept="image/png, image/jpeg, image/gif" name="input-file-preview" value="$link"/> <!-- rename it -->
+                                </div>
+                            </span>
+                        </div><!-- /input-group image-preview [TO HERE]--> 
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 30px;">
+              <div class="col-md-5">
+                <a  class="update-buttom" href="/users" style="color: #bec1c4;">CANCEL</a>
+              </div>
+              <div class="col-md-6">
+                <a class="update-buttom" ng-click="updateUser()" href="">UPDATE USER</a>
+              </div>
+            </div>
+            <hr>
+          </form>
+      </div>
+  </div>
+</div>
+<div class="updateForm">
+  <ng-view></ng-view>
+</div>
+</form>
+  <script src="//code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="javascripts/RouteProvider.js"></script>
+  </body>
+</html>

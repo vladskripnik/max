@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app="nodeTodo">
+<head>
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link rel="stylesheet" href="stylesheets/style.css" media="screen">
+</head>
+<body ng-controller="mainController" style="background-color: #ffa514;">
+<div class="imgposition">
+<div class="row">
+    <div class="col-md-6 ">
+      <img clas="logo-image" src="/logo.png">
+    </div>
+</div>
+</div>
+</div>
+<div class="registration">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="col-md-4">
+        <div class="loginpanel">
+          <h1 class="login">Login</h1>
+        </div>
+        <div class="todo-form">
+          <form>
+            <div class="form-group">
+                <input type="text" class="form-control input-lg" placeholder="&raquo; Enter username" ng-model="loginData.text" required>
+              <div class="form-group">
+                <input type="text" class="form-control input-lg" placeholder="&raquo; Enter password" ng-model="passData.text" required>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="button-press">
+  <div class="row button-regist">
+    <div class="col-md-4">
+      <div class="col-md-5">
+        <button type="submit" class="button-push" ng-click="login()"><a href="/users"><h1 class="arrow">&rarr;</h1></a></button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="styleq">
+  <h2><a href="" class="forgotten">Forgotten access details?</a></h2>
+</div>
+  <script src="//code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="javascripts/mainController.js" type="text/javascript"></script>
+</body>
+</html>
